@@ -1,0 +1,49 @@
+/* faire tri */
+
+/*page1*/
+.sommaire {
+    text-decoration: underline ; 
+    font-family:Impact ; 
+    font-size:large;
+    }  
+
+.logo {
+    max-width: 20%;
+    display: block;
+    margin: 20px auto;
+    }
+
+.titre {
+    font-weight : bold; 
+    text-decoration:underline; 
+    font-size : 2em ; 
+    /* text-align : center ;  */
+    font-family:Impact;
+    }   
+
+
+
+
+.photo { object-fit: contain ; position : absolute ; right : -155px ; top : 300px }
+
+table{border : 2px solid rgb(38, 0, 255) ; border-collapse: collapse ; padding : 10 px ;}
+td{border: 1px solid rgb(38,0,255);padding: 10px;}
+#tableau{background-color: rgb(161, 242, 255); font-weight : bold;}
+
+
+
+
+/*page2*/
+.generalL{margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(0, 191, 255); border-radius: 30px ; }
+.generalD{ margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(255, 0, 234); border-radius: 30px ;}
+.generalF{ margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(0, 255, 191); border-radius: 30px ;}
+.generalC{ margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(166, 0, 255); border-radius: 30px ;}
+.generalCleo{ margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(225, 255, 0); border-radius: 30px ;}
+
+
+/*page3*/
+.scaris{margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(69, 0, 104); border-radius: 30px ; }
+.souhaits{margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted #000080; border-radius: 30px ; }
+.fright{margin:20px ; padding : 10px; font-family : arial ; background-color : white ; border : 4px dotted rgb(104, 85, 0); border-radius: 30px ; }
+
+

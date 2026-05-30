@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKP - Brosse à dents connectée</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="shortcut icon" href="../image/favicon.ico" />
+</head>
+<body background="../image/background.png" style="background-attachment: fixed; background-size: cover;">
+
+    <header class="text-center my-3">
+        <p class="logo"><img src="../image/logohkpn.png" alt="logo HKP" width="100%"/></p>
+        
+    </header>
+
+    <nav class="container my-4">
+        <ul class="list-group list-group-horizontal d-flex gap-3 flex-wrap justify-content-center" style="padding: 0;">
+            <li class="list-group-item case-sommaire"><a href="#projet" class="text-decoration-none" style="color:rgb(147, 1, 183)">Notre Projet</a></li>
+            <li class="list-group-item case-sommaire"><a href="#outils" class="text-decoration-none" style="color:rgb(255, 193, 7)">Outils</a></li>
+            <li class="list-group-item case-sommaire"><a href="#gestion" class="text-decoration-none" style="color:rgb(203, 2, 166)">Gestion de projet</a></li>
+            <li class="list-group-item case-sommaire"><a href="#realisations" class="text-decoration-none" style="color:rgb(0, 77, 153)">Réalisations</a></li>
+            <li class="list-group-item case-sommaire"><a href="#notice" class="text-decoration-none" style="color:rgb(16, 144, 12)">Notice technique</a></li>
+            <li class="list-group-item case-sommaire"><a href="#acquis" class="text-decoration-none" style="color:rgb(195, 0, 10)">Acquis pédagogiques</a></li>
+            <li class="list-group-item case-sommaire"><a href="#rse" class="text-decoration-none" style="color:rgb(255, 108, 4)">DD&RSE</a></li>
+            <li class="list-group-item case-sommaire"><a href="#perspectives" class="text-decoration-none" style="color:rgb(74, 26, 0)">Perspectives</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="projet" style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">
+        <h2>Notre Projet</h2>
+        <div class="contenu">
+            <p>Ce projet est proposé annuellement aux 1A de l’ENSC par Maxime Poret, spécialiste en informatique sonore, dans le but d’éveiller les étudiants ingénieurs à la conception d’instruments informatiques musicaux.</p>
+            <p>Inspirés par le jeu <strong>Mimizaur</strong>, nous avons créé une brosse à dents connectée pour rendre le brossage ludique. L'idée est d'utiliser une brosse à dents comme interface musicale où les mouvements contrôlent directement les sons générés.</p>
+        </div>
+    </section>
+
+    <section id="projet" style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">
+        <h2>Présentation de l'équipe</h2>
+        <div class="contenu">
+            <img src="../image/equipe.jpg" alt="L'equipe" style="width: 100%; max-width: 500px;" />
+        </div>
+    </section>
+
+    <!-- réalisations -->
+    <section style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">    
+        <h2><a id="realisations">Réalisations</a></h2>
+        <br><br>
+
+        <div style="display: flex; align-items: center; gap: 20px; justify-content: space-between;">
+            
+            <div style="flex: 1;">
+                <h4>Maquette sur OnShape :</h4>
+                <p></p> <!-- si commentaire de la maquette-->
+            </div>
+            
+            <div style="flex: 1; text-align: right;">
+                <img src="../image/maquette0.png" alt="maquette" style="width: 100%; max-width: 500px;" />
+            </div>
+
+        </div>
+
+        <br><br><br>
+            <h4>Fonctionnement interne du dispositif :</h4>
+<!-- mettre la photo au milieu -->
+        <div style="text-align: center;">
+          <img src="../image/maquette1.png" alt="maquette" width="90%" />
+          </div>
+          </br>
+<!-- RAJOUTER PHOTO FILTRE  -->
+ <!-- mieux dvper texte -->
+          <h4>Haut-parleur : essai de création d'un filtre mais cela n'a pas fonctionné.</h4>
+          </br>
+          <div style="text-align: center;">
+          <img src="../image/rc dernier.png" alt="maquette" width="90%" />
+          </div>
+        </br></br>
+          <h4>Code :</h4>
+          <ul>
+            <li>Un premier programme exécuté sur le pico permettant de lire les données de l’accéléromètre</li>
+            <li>Un second exécuté sur PC récupérant en temps réel les données d’accélération (tuple de 3 valeurs symbolisant les 3 directions) via un câble USB et utilisant ces données afin d'appliquer des effets sonores à une musique (cf mapping).</li>
+          </ul>
+          <img src="../image/synthese.png" alt="Synthese sonore" width="100%">
+          <p>Voici un aperçu du mapping (i.e, du processus de conversion de données numériques en données sonores) :</p>
+          <img src="../image/mapping.png" alt="Mapping" width="100%">
+        </br></br></br>
+          <h4>Tests utilisateurs :</h4>
+          <p>
+            Nous avons fait passer des tests utilisateurs à 3 personnes. Les tests portent sur l'utilisation de la brosse à dents (mise en marche du dispositif et simulation d'un brossage de dents) mais nous n'avons pas pu faire passer le test avec l'interface Web par manque de temps.
+          </p>
+          <p>
+            Les tests comportent une phase d'observation puis un questionnaire (dont la majorité des questions demande une réponse basée sur une échelle de Likert allant de 1 à 5 où 5 correspond à "beaucoup").
+          </p>
+          
+          <p>Voici les résultats :</p>
+          <ul>
+            <li>Concernant la prise en main de la brosse à dents, 2 personnes ont eu besoin d'aide pour démarrer le dispositif et la moyenne est de 3/5. (cf. graphique 4)</li>
+            <li>Concernant l'utilisation, la satisfaction globale de la brosse à dents s'élève à 3/5. (cf. graphique 6)</li>
+            <li>Concernant la musique, en moyenne, les utilisateurs jugent que la musique est un plus pour l'utilisation de la brosse à dents. (cf. graphique 10)</li>
+          </ul>
+
+        <div style="display: flex; gap: 15px; justify-content: center; align-items: center; flex-wrap: wrap; width: 100%;">
+    
+    <img src="../image/tests/test1.png" alt="test1" 
+         style="width: 23%; height: auto; cursor: pointer; transition: width 0.3s ease; border-radius: 4px;" 
+         onclick="toggleZoom(this)">
+
+    <img src="../image/tests/test2.png" alt="test2" 
+         style="width: 23%; height: auto; cursor: pointer; transition: width 0.3s ease; border-radius: 4px;" 
+         onclick="toggleZoom(this)">
+
+    <img src="../image/tests/test3.png" alt="test3" 
+         style="width: 23%; height: auto; cursor: pointer; transition: width 0.3s ease; border-radius: 4px;" 
+         onclick="toggleZoom(this)">
+
+    <img src="../image/tests/test4.png" alt="test4" 
+         style="width: 23%; height: auto; cursor: pointer; transition: width 0.3s ease; border-radius: 4px;" 
+         onclick="toggleZoom(this)">
+
+</div>
+
+<script>
+function toggleZoom(image) {
+    // Si l'image cliquée est déjà grande, on la remet à sa taille normale (23%)
+    if (image.style.width === "60%") {
+        image.style.width = "23%";
+    } else {
+        // Optionnel : On réduit d'abord toutes les AUTRES images à 23% avant d'agrandir celle-ci
+        const toutesLesImages = image.parentElement.getElementsByTagName('img');
+        for (let img of toutesLesImages) {
+            img.style.width = "23%";
+        }
+        
+        // On agrandit l'image cliquée à 60%
+        image.style.width = "60%";
+    }
+}
+</script>
+        </br></br>
+          <h4>Site web utilisateur</h4>
+            <p> 
+            Nous avons réalisé un site web conçu pour l'utilisateur. Sur celui-ci, il peut sélectionner la musique qu'il souhaite en fonction de son humeur.
+            </p>
+            <!-- mettre les images au milieu -->
+            <img src="../image/utilisateur3.png" alt="site web utilisateur 1" width="80%">
+            <img src="../image/utilisateur4.png" alt="site web utilisateur 2" width="80%">
+        </div>
+    </section>
+
+
+
+    <!-- notice -->
+    <section id="notice" style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">
+        <h2>Notice d'utilisation</h2>
+    </br>
+        <div class="contenu">
+            <p><embed src="../notice.pdf" type="application/pdf" width="100%" height="600px" /></p>
+        </div>
+    </section>
+
+    
+
+    <!-- gestion projet -->
+    <section style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">    
+        <h2> <a id ="gestion">Gestion de projet</a></h2>
+    </br>
+        <h4><a id ="outils">Outils</a></h4>
+        <div class="row text-center mt-4 align-items-end">
+            <div class="col-md-2 col-6 mb-4">
+                <i class="fab fa-whatsapp fa-3x mb-2" style="color: #33e474;"></i>
+                <p><strong>WhatsApp</strong></p>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg" alt="Google Drive" style="width: 50px; margin-bottom: 10px;">
+                <p><strong>Google Drive</strong></p>
+            </div>
+            <div class="col-md-2 col-4 mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg" alt="Google Meet" style="width: 50px; margin-bottom: 10px;">
+            <p><strong>Meet</strong></p>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Ultimaker_cura.png" alt="Ultimaker Cura" style="width: 50px; margin-bottom: 10px;">
+                <p><strong>Cura</strong></p>
+            </div>
+            <div class="col-md-2 col-12 mb-4">
+            <img src="../image/eirlab.png" alt="Eirlab" style="width: 50px; margin-bottom: 10px;">
+                <p><strong>EirLab (imprimantes 3D)</strong></p>
+            </div> 
+            <div class="col-md-2 col-14 mb-4">
+            <img src="../image/oneshape.png" alt="Oneshape" style="width: 50px; margin-bottom: 10px;">
+                <p><strong>Oneshape</strong></p>
+            </div> 
+            <!-- rajouter onshape -->
+        </div>
+    </br>
+        <h4 >Coordination :</h4>
+        <p> Entre membres de l’équipe : au moins 1 réunion par semaine</p>
+        <ul>
+            <li>Faire un point sur les avancées de chacun</li>
+            <li>Se répartir le travail de la semaine</li>
+            <li>Ajuster le projet en fonction des problèmes rencontrés</li>
+        </ul>
+
+        <p>Avec notre tuteur/client : 1 réunion par semaine</p>
+        <ul>
+            <li>Présenter nos avancées techniques</li>
+            <li>Discuter des différents problèmes rencontrés</li>
+        </ul> 
+    </br>
+        <h4>Planning</h4>
+        <!-- mettre les images au milieu  -->
+        <div style="text-align: center;">
+            <img src="../image/planning.png" alt="planning" width="80%">
+        </div>
+    </br></br></br>
+        <h4>Matrice d'implication</h4>
+        <!-- mettre les images au milieu  -->
+         <div style="text-align: center;">
+        <img src="../image/matrice_implication.png" alt="matrice d'implication" width="80%">
+        </div>
+    </br></br>
+    </section>
+
+    <!-- acquis pédagogiques -->
+    <section style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">    
+        <h2> <a id ="acquis">Acquis pédagogiques</a></h2>
+        <p> 
+          Le projet nous a permis de développer des compétences en gestion de projet, comme la coordination au sein de groupe mais aussi avec notre tuteur/client. 
+          Nous avons également dû nous adapter aux différents obstacles que nous avons rencontrés, notamment au niveau du code et du matériel.<br>
+          Sur le plan technique, nous avons dû apprendre à utiliser différents outils auxquels nous n'étions pas familiers (ex : imprimantes 3D, bibliothèques audio Python). <br>
+          La pluridisciplinarité du projet nous a poussé à découvrir diverses techniques tout en développant notre créativité artistique. <br>
+        </p>
+    </section>
+
+    <!-- DD&RSE -->
+    <section style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">    
+        <h2> <a id ="rse">DD&RSE</a></h2>
+        <p> 
+          Pour se plier aux exigences environnementales du Plan Vert et de la loi Grenelle, nous avons pris plusieurs mesures pour réduire l'empreinte écologique de notre projet et du site. <br>
+          Nous avons optimisé la taille des images pour réduire la consommation énergétique liée au chargement et tranfert des données. <br>
+          Notre prototype a été conçu de sorte que le remplacement des pièces soit possible, ainsi si un composant ne fonctionne plus, il ne sera pas nécessaire de changer l'intégralité du dispositif. <br>
+          Sur le plan des enjeux sociaux, nous avons réalisé une interface Web respectant les critères d'accessibilité, permettant ainsi à l'ensemble des utilisateurs de naviguer sans obstacle. De plus, l'ensemble de notre projet s'inscrit dans une logique d'inclusion et d'utilité sociale car le dispositif est d'abord destiné aux enfants, dans le but de les encourager à se brosser les dents plus régulièrement et en respectant le temps recommandé par le personnel de santé. 
+        </p>
+    </section>
+
+
+    <!-- perspectives -->
+    <section style = "text-align : left ; background-color : white ; margin-left : 25px ; margin-top: 15px; margin-right: 25px; padding:20px; border-radius: 30px ;">    
+        <h2> <a id ="perspectives">Perspectives</a></h2>
+        <p> 
+            Malgré le travail effectué tout au long de l'année, de nombreuses pistes d'améliorations sont encore envisagées. 
+            En effet, notre prototype peut encore être amélioré sur ses aspects fonctionnels et esthétiques. </br>
+            La prise en main reste tout de même difficile et nous doutons de l'utilisation régulière d'un tel dispositif. Nous avons fait le choix d'un dispositif plutôt gros qui s'adapte à toutes les brosses à dents plutôt qu'un dispositif qui soit bien maniable.</br>
+            Egalement, pour assurer l'étanchéité, nous avons utilisé du PLA. Toutefois, notre manque de budget nous a empeché d'utiliser le même fil pour toute notre boîte. Aussi, nous avons placé un ballon sur le dessus de la boîte pour empecher l'eau de pénétrer à l'interieur du dipositif.</br>
+            Pour éviter cela, il serait pertinent d'utiliser du caoutchouc entourant entièrement notre dispositif sur le dessus. De cette manière, la différence de couleur ne se verrait pas et l'aspect "brouillon" du projet à cause du ballon ne serait plus un problème.</br> 
+            
+        </p>
+    </section>
+
+
+
+    <!-- Contact  -->
+    <section style = "text-align : left ; background-color : white; margin-left:25px; margin-top:15px; margin-right: 25px; padding:20px;border-radius: 30px ;">
+        <h2> <a id="autre">Nous contacter ...</a></h2>
+        <p>pmesples@ensc.fr</br>lamato@ensc.fr</br>tcollongues@ensc.fr</br>aleonidas@ensc.fr</br></p>
+        <p class="logo"><img src="../image/ensc.png" alt="logo HKP" width="100%"/></p>
+    </section>
+
+
+
+    <footer style = "color : black;" > L'équipe HKP - pmesples@ensc.fr</footer>
+
+
+</body>
+</html>
